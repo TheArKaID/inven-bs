@@ -4,11 +4,33 @@
 <div class="card">
     <div class="row px-3 py-3">
         <div class="col-12 col-md-12 col-lg-12">
-            <form method="post" class="needs-validation" novalidate="">
+            <form action="{{ route('settings.simpan')}}" method="post" class="needs-validation" novalidate="">
                 <div class="card-header">
                     <h4>Edit Profile</h4>
                 </div>
+                {{ csrf_field() }}
+                <input type="hidden" name="id" value="{{\Auth::user()->id}}">
                 <div class="card-body">
+                    @if (session()->has('error'))
+                    <div class="alert alert-danger alert-dismissible show fade">
+                        <div class="alert-body">
+                            <button class="close" data-dismiss="alert">
+                                <span>×</span>
+                            </button>
+                            {{session()->get('error')}}
+                        </div>
+                    </div>
+                    @endif
+                    @if (session()->has('sukses'))
+                    <div class="alert alert-success alert-dismissible show fade">
+                        <div class="alert-body">
+                            <button class="close" data-dismiss="alert">
+                                <span>×</span>
+                            </button>
+                            {{session()->get('sukses')}}
+                        </div>
+                    </div>
+                    @endif
                     <div class="row">
                         <div class="form-group col-md-6 col-12">
                             <label>Nama</label>

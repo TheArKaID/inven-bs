@@ -5,19 +5,12 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right">
             <div class="dropdown-title">Akun sejak: {{ auth()->user()->diffForHumanDate(auth()->user()->created_at) }}</div>
-            <a href="{{ route('settings')}}" class="dropdown-item has-icon">
+            <a href="{{ route('settings')}}" class="dropdown-item has-icon {{ Request::segment(2) === 'settings' ? 'active' : '' }}">
                 <i class="fas fa-cog"></i> Settings
             </a>
             <div class="dropdown-divider"></div>
-            <!-- <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="dropdown-item has-icon text-danger" id="logout-form">
-                <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
-            </a>
-            <form action="{{ route('logout') }}" method="POST" id="logout-form" style="display: none;">
-                @csrf
-            </form> -->
-            <a class="dropdown-item has-icon text-danger" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+            <a class="dropdown-item has-icon text-danger" href="{{ route('logout') }}" 
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="fas fa-sign-out-alt"></i>
                 {{ __('Logout') }}
             </a>
