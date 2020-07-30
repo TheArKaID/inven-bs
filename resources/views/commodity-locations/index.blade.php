@@ -34,7 +34,7 @@
               <td>{{ $commodity_location->created_at }}</td>
               <td class="text-center">
                 <a data-id="{{ $commodity_location->id }}" class="btn btn-sm btn-info text-white show_modal" data-toggle="modal" data-target="#show_commodity_location">
-                  <i class="fas fa-fw fa-search"></i>
+                  <i class="fas fa-fw fa-info"></i>
                 </a>
                 <a data-id="{{ $commodity_location->id }}" class="btn btn-sm btn-success text-white swal-edit-button" data-toggle="modal" data-target="#commodity_location_edit_modal" data-placement="top" title="Ubah data">
                   <i class="fas fa-fw fa-edit"></i>
