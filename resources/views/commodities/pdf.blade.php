@@ -11,10 +11,8 @@
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
   }
-
-  table.center {
-    margin-left: auto;
-    margin-right: auto;
+  th{
+    text-align: start;
   }
   .page-break {
     page-break-after: always;
@@ -22,32 +20,42 @@
 </style>
 
 <body>
-    @foreach($commodities as $key => $commodity)
-    <table class="center" border="1" cellpadding="10" cellspacing="0">
-      <tr>
-        <td colspan="2">Barang Milik {{$sekolah}}</td>
-      </tr>
-      <tr>
-        <th>Kode Barang : </th>
-        <td>{{ $commodity->item_code }}</td>
-      </tr>
-      <tr>
-        <th>Nama Barang : </th>
-        <td>{{ $commodity->name }}</td>
-      </tr>
-      <tr>
-        <th>Asal Perolehan : </th>
-        <td>{{ $commodity->school_operational_assistance->name }}</td>
-      </tr>
-    </table>
-    <br>
-    @if ($key!=0)
-      @if (($key+1) % 4==0)
-        <div class="page-break"></div>
-        {{-- {{dd($key)}} --}}
+  <table>
+  <tr>
+    <td>
+      @foreach($commodities as $key => $commodity)
+      <table class="center" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td rowspan="3"><img src="assets/img/sdmuhbrosotmini.png" width="75px"></td>
+          <td colspan="2">{{$sekolah}}</td>
+        </tr>
+        <tr>
+          <th>Kode Barang</th>
+          <td> : {{ $commodity->item_code }}</td>
+        </tr>
+        <tr>
+          <th>Tanggal Beli</th>
+          <td> : {{ $commodity->year_of_purchase }}</td>
+        </tr>
+      </table>
+      <br>
+      @if ($key!=0)
+        @if (($key+1) % 9==0)
+          </td>
+          <td>
+        @endif
+        @if (($key+1) % 18==0)
+          </td>
+          </tr>
+          <tr>
+            <td>
+          <div class="page-break"></div>
+        @endif
       @endif
-    @endif
-    @endforeach
+      @endforeach
+    </td>
+  </tr>
+  </table>
 </body>
 
 </html>
