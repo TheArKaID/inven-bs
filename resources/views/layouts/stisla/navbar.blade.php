@@ -5,7 +5,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right">
             <div class="dropdown-title">Akun sejak: {{ auth()->user()->diffForHumanDate(auth()->user()->created_at) }}</div>
-            <a href="features-settings.html" class="dropdown-item has-icon">
+            <a href="{{ route('settings')}}" class="dropdown-item has-icon">
                 <i class="fas fa-cog"></i> Settings
             </a>
             <div class="dropdown-divider"></div>
