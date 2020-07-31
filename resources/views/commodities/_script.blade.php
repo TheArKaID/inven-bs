@@ -70,9 +70,9 @@
                         },
                         showConfirmButton: false
                     });
-                    // setTimeout(function() {
-                    //     location.reload();
-                    // }, 500)
+                    setTimeout(function() {
+                        location.reload();
+                    }, 500)
                 },
                 error: function(data) {
                     console.log('gagal');
