@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th>Kode Barang</th>
-      <td> : {{ $commodity->item_code }}</td>
+      <td>{{ $commodity->item_code }}</td>
     </tr>
     <tr>
       <th>Tanggal Beli</th>

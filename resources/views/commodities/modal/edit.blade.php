@@ -50,7 +50,7 @@
                         <div class="col-lg-4">
                             <div class="form-group">
                                 <label for="date_of_purchase_edit">Tahun Pembelian</label>
-                                <input type="number" class="form-control" id="date_of_purchase_edit">
+                                <input type="date" class="form-control" id="date_of_purchase_edit">
                             </div>
                         </div>
                     </div>

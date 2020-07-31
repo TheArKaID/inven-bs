@@ -12,7 +12,6 @@ $factory->define(Commodity::class, function (Faker $faker) {
         'school_operational_assistance_id' => mt_rand(1, 2),
         'commodity_location_id' => mt_rand(1, 10),
         'item_code' => 'BRG-' . mt_rand(1000, 9999),
-        'register' => 'RG-' . mt_rand(1000, 9999),
         'name' => $faker->realText(30),
         'brand' => $faker->realText(30),
         'material' => $faker->realText(30),

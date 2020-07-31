@@ -15,7 +15,6 @@
                     console.log(data)
                     $("#modalLabel").html(data.data.item_code)
                     $("#item_code").val(data.data.item_code)
-                    $("#register").val(data.data.register)
                     $("#commodity_location_id").html(data.data.commodity_location_id)
                     $("#name").html(data.data.name)
                     $("#brand").val(data.data.brand)
