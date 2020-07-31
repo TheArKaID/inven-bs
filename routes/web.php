@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// GANTI TAHUN KE TANGGAL.
+
 Route::get('/', function () {
     return view('auth.login');
 });
@@ -47,6 +47,3 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('/school-operational/json', 'SchoolOperationalAssistances\Ajax\SchoolOperationalAssistanceAjaxController');
     Route::resource('/commodity-locations/json', 'CommodityLocations\Ajax\CommodityLocationAjaxController');
 });
-
-// Route::group(['prefix' => 'commodities', 'as' => 'commodities.'], function () {
-// });
