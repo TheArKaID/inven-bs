@@ -67,7 +67,7 @@
               <th scope="row">{{ $loop->iteration }}</th>
               <td>{{ $commodity->item_code }}</td>
               <td>{{ Str::limit($commodity->name, 55, '...') }}</td>
-              <td>{{ $commodity->year_of_purchase }}</td>
+              <td>{{ $commodity->date_of_purchase }}</td>
               @if($commodity->condition === 1)
               <td>
                 <span class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="top" title="Baik">Baik</span>

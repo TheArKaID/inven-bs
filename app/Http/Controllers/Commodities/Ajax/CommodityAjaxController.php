@@ -17,7 +17,7 @@ class CommodityAjaxController extends Controller
         $commodities->name = $request->name;
         $commodities->brand = $request->brand;
         $commodities->material = $request->material;
-        $commodities->year_of_purchase = $request->year_of_purchase;
+        $commodities->date_of_purchase = $request->date_of_purchase;
         $commodities->condition = $request->condition;
         $commodities->quantity = $request->quantity;
         $commodities->price = $request->price;
@@ -40,7 +40,7 @@ class CommodityAjaxController extends Controller
             'brand' => $commodity->brand,
             'material' => $commodity->material,
             // $commodity->date_of_purchase
-            'year_of_purchase' => $commodity->year_of_purchase,
+            'date_of_purchase' => $commodity->date_of_purchase,
             'condition' => $commodity->condition,
             'quantity' => $commodity->quantity,
             'price' => $commodity->indonesian_currency($commodity->price),
@@ -62,7 +62,7 @@ class CommodityAjaxController extends Controller
             'name' => $commodity->name,
             'brand' => $commodity->brand,
             'material' => $commodity->material,
-            'year_of_purchase' => $commodity->year_of_purchase,
+            'date_of_purchase' => $commodity->date_of_purchase,
             'condition' => $commodity->condition,
             'quantity' => $commodity->quantity,
             'price' => $commodity->price,
@@ -83,7 +83,7 @@ class CommodityAjaxController extends Controller
         $commodities->name = $request->name;
         $commodities->brand = $request->brand;
         $commodities->material = $request->material;
-        $commodities->year_of_purchase = $request->year_of_purchase;
+        $commodities->date_of_purchase = $request->date_of_purchase;
         $commodities->condition = $request->condition;
         $commodities->quantity = $request->quantity;
         $commodities->price = $request->price;

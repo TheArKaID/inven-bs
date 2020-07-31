@@ -19,7 +19,7 @@
                     $("#name").html(data.data.name)
                     $("#brand").val(data.data.brand)
                     $("#material").val(data.data.material)
-                    $("#year_of_purchase").val(data.data.year_of_purchase)
+                    $("#date_of_purchase").val(data.data.date_of_purchase)
                     $("#school_operational_assistance_id").html(data.data.school_operational_assistance_id)
                     $("#quantity").val(data.data.quantity)
                     $("#price").val(data.data.price)
@@ -45,7 +45,7 @@
                     name: $("#name_create").val(),
                     brand: $("#brand_create").val(),
                     material: $("#material_create").val(),
-                    year_of_purchase: $("#year_of_purchase_create").val(),
+                    date_of_purchase: $("#date_of_purchase_create").val(),
                     condition: $("#condition_create").val(),
                     quantity: $("#quantity_create").val(),
                     price: $("#price_create").val(),
@@ -105,7 +105,7 @@
                     $("#name_edit").val(data.data.name)
                     $("#brand_edit").val(data.data.brand)
                     $("#material_edit").val(data.data.material)
-                    $("#year_of_purchase_edit").val(data.data.year_of_purchase)
+                    $("#date_of_purchase_edit").val(data.data.date_of_purchase)
                     $("#condition_edit").val(data.data.condition)
                     $("#quantity_edit").val(data.data.quantity)
                     $("#price_edit").val(data.data.price)
@@ -139,7 +139,7 @@
                     name: $("#name_edit").val(),
                     brand: $("#brand_edit").val(),
                     material: $("#material_edit").val(),
-                    year_of_purchase: $("#year_of_purchase_edit").val(),
+                    date_of_purchase: $("#date_of_purchase_edit").val(),
                     condition: $("#condition_edit").val(),
                     quantity: $("#quantity_edit").val(),
                     price: $("#price_edit").val(),

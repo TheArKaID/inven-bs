@@ -74,7 +74,7 @@ class CommoditySeeder extends Seeder
                 'name' => $commodities[array_rand($commodities)],
                 'brand' => $brands[array_rand($brands)],
                 'material' => $materials[array_rand($materials)],
-                'year_of_purchase' => mt_rand(2020, 9999),
+                'date_of_purchase' => mt_rand(0, 30) .'-'. mt_rand(1, 12) .'-'. mt_rand(1999, 2030),
                 'condition' => mt_rand(1, 3),
                 'quantity' => mt_rand(50, 200),
                 'price' => mt_rand(5000, 500000),

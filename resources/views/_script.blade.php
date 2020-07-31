@@ -20,7 +20,7 @@
                     $("#name").html(data.data.name)
                     $("#brand").val(data.data.brand)
                     $("#material").val(data.data.material)
-                    $("#year_of_purchase").val(data.data.year_of_purchase)
+                    $("#date_of_purchase").val(data.data.date_of_purchase)
                     $("#school_operational_assistance_id").html(data.data.school_operational_assistance_id)
                     $("#quantity").val(data.data.quantity)
                     $("#price").val(data.data.price)

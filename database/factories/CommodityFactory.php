@@ -16,7 +16,7 @@ $factory->define(Commodity::class, function (Faker $faker) {
         'name' => $faker->realText(30),
         'brand' => $faker->realText(30),
         'material' => $faker->realText(30),
-        'year_of_purchase' => $carbon->createFromDate('2020', mt_rand(1, 12), mt_rand(1, 31)),
+        'date_of_purchase' => $carbon->createFromDate('2020', mt_rand(1, 12), mt_rand(1, 31)),
         'condition' => mt_rand(1, 3),
         'quantity' => mt_rand(500, 1000),
         'price' => mt_rand(10000, 100000),
