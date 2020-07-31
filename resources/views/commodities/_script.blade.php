@@ -14,12 +14,11 @@
                 success: function(data) {
                     $("#modalLabel").html(data.data.item_code)
                     $("#item_code").val(data.data.item_code)
-                    $("#register").val(data.data.register)
                     $("#commodity_location_id").html(data.data.commodity_location_id)
                     $("#name").html(data.data.name)
                     $("#brand").val(data.data.brand)
                     $("#material").val(data.data.material)
-                    $("#year_of_purchase").val(data.data.year_of_purchase)
+                    $("#date_of_purchase").val(data.data.date_of_purchase)
                     $("#school_operational_assistance_id").html(data.data.school_operational_assistance_id)
                     $("#quantity").val(data.data.quantity)
                     $("#price").val(data.data.price)
@@ -41,11 +40,10 @@
                     school_operational_assistance_id: $("#school_operational_assistance_id_create").val(),
                     commodity_location_id: $("#commodity_location_id_create").val(),
                     item_code: $("#item_code_create").val(),
-                    register: $("#register_create").val(),
                     name: $("#name_create").val(),
                     brand: $("#brand_create").val(),
                     material: $("#material_create").val(),
-                    year_of_purchase: $("#year_of_purchase_create").val(),
+                    date_of_purchase: $("#date_of_purchase_create").val(),
                     condition: $("#condition_create").val(),
                     quantity: $("#quantity_create").val(),
                     price: $("#price_create").val(),
@@ -72,9 +70,9 @@
                         },
                         showConfirmButton: false
                     });
-                    setTimeout(function() {
-                        location.reload();
-                    }, 500)
+                    // setTimeout(function() {
+                    //     location.reload();
+                    // }, 500)
                 },
                 error: function(data) {
                     console.log('gagal');
@@ -101,11 +99,10 @@
                     $("#school_operational_assistance_id_edit").val(data.data.school_operational_assistance_id)
                     $("#commodity_location_id_edit").val(data.data.commodity_location_id)
                     $("#item_code_edit").val(data.data.item_code)
-                    $("#register_edit").val(data.data.register)
                     $("#name_edit").val(data.data.name)
                     $("#brand_edit").val(data.data.brand)
                     $("#material_edit").val(data.data.material)
-                    $("#year_of_purchase_edit").val(data.data.year_of_purchase)
+                    $("#date_of_purchase_edit").val(data.data.date_of_purchase)
                     $("#condition_edit").val(data.data.condition)
                     $("#quantity_edit").val(data.data.quantity)
                     $("#price_edit").val(data.data.price)
@@ -135,11 +132,10 @@
                     school_operational_assistance_id: $("#school_operational_assistance_id_edit").val(),
                     commodity_location_id: $("#commodity_location_id_edit").val(),
                     item_code: $("#item_code_edit").val(),
-                    register: $("#register_edit").val(),
                     name: $("#name_edit").val(),
                     brand: $("#brand_edit").val(),
                     material: $("#material_edit").val(),
-                    year_of_purchase: $("#year_of_purchase_edit").val(),
+                    date_of_purchase: $("#date_of_purchase_edit").val(),
                     condition: $("#condition_edit").val(),
                     quantity: $("#quantity_edit").val(),
                     price: $("#price_edit").val(),

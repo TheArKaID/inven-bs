@@ -27,11 +27,11 @@
     </tr>
     <tr>
       <th>Kode Barang</th>
-      <td> : {{ $commodity->item_code }}</td>
+      <td>{{ $commodity->item_code }}</td>
     </tr>
     <tr>
       <th>Tanggal Beli</th>
-      <td> : {{ $commodity->year_of_purchase }}</td>
+      <td>{{ $commodity->date_of_purchase }}</td>
     </tr>
   </table>
 </body>

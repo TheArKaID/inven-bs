@@ -49,8 +49,8 @@
 
                         <div class="col-lg-4">
                             <div class="form-group">
-                                <label for="year_of_purchase_edit">Tahun Pembelian</label>
-                                <input type="number" class="form-control" id="year_of_purchase_edit">
+                                <label for="date_of_purchase_edit">Tahun Pembelian</label>
+                                <input type="date" class="form-control" id="date_of_purchase_edit">
                             </div>
                         </div>
                     </div>

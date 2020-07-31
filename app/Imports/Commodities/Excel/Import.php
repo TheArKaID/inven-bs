@@ -29,7 +29,7 @@ class Import implements ToModel, WithHeadingRow
             'material' => $row['bahan'],
             'school_operational_assistance_id' => $school_operational->id,
             'commodity_location_id' => $commodity_location->id,
-            'year_of_purchase' => $row['tahun_pembelian'],
+            'date_of_purchase' => $row['tahun_pembelian'],
             'condition' => $this->checkCommodityConditions($row['kondisi']),
             'quantity' => $row['kuantitas'],
             'price' => $row['harga'],

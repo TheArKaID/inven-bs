@@ -62,7 +62,7 @@ class Export implements FromCollection, WithHeadings, ShouldAutoSize
             $data[$key]['material'] = $commodity->material;
             $data[$key]['school_operational_assistance_id'] = $commodity->school_operational_assistance->name;
             $data[$key]['location'] = $commodity->commodity_location->name;
-            $data[$key]['year_of_purchase'] = $commodity->year_of_purchase;
+            $data[$key]['date_of_purchase'] = $commodity->date_of_purchase;
             $data[$key]['condition'] = $this->checkCommodityConditions($commodity);
             $data[$key]['quantity'] = $commodity->quantity;
             $data[$key]['price'] = $commodity->price;

@@ -44,8 +44,8 @@
             <input type="text" name="" class="form-control" id="brand" placeholder="" disabled>
           </div>
           <div class="col-lg-4">
-            <label for="year_of_purchase"><b>Tahun Pembelian</b></label>
-            <input type="text" name="" class="form-control" id="year_of_purchase" placeholder="" disabled>
+            <label for="date_of_purchase"><b>Tahun Pembelian</b></label>
+            <input type="text" name="" class="form-control" id="date_of_purchase" placeholder="" disabled>
           </div>
         </div>
         <hr>
