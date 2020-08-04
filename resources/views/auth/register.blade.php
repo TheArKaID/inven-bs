@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Buat Akun &mdash; Stisla</title>
+  <title>Buat Akun &mdash; SD Muhammadiyah Brosot</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}">
@@ -13,6 +13,8 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
   <link rel="stylesheet" href="{{ url('assets/css/components.css') }}">
+  
+  <link rel="shortcut icon" href="../assets/img/sdmuhbrosot.png" type="image/x-icon">
 </head>
 
 <body>
