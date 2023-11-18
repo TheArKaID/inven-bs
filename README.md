@@ -3,6 +3,8 @@
 Aplikasi inventaris barang sekolah menggunakan Framework Laravel 7.
 
 (Cloned from [mrizkimaulidan/inven-bs](https://github.com/mrizkimaulidan/inven-bs) with some modifications based on my requirement, please refer there for official update and the newest change)
+# Obsolete
+Although this laravel project looks good and is workable, it is too old to use. It is recommended to update this project to the latest version first, or try looking for another one. Good luck.
 
 ### Prasyarat
 
